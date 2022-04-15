@@ -1,5 +1,26 @@
 function fibonacci(num) {
-  // type your code here
+  let array = []
+  let element1
+  let element2
+  for (let i = 0; i <= num; i++) {
+    if (array[array.length -2]) {
+      element1 = array[array.length -2]
+    } else {
+      element1 = 0
+    }
+    if (array[array.length -1]) {
+      element2 = array[array.length -1]
+    } else {
+      element2 = 0
+    }
+    sum = element1 + element2
+    if (i === 1) {
+      array.push(1)
+    } else {
+      array.push(sum)    
+    }
+  }
+  return array[array.length-1]
 }
 
 if (require.main === module) {
