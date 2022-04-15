@@ -1,5 +1,13 @@
 def fibonacci(num)
-  # type your code in here
+  array = []
+  repeat = num + 1
+  repeat.times do |i|
+    array[-1] ? element1 = array[-1] : element1 = 0
+    array[-2] ? element2 = array[-2] : element2 = 0
+    sum = element1 + element2
+    i == 1 ? array << 1 : array << sum
+  end
+  array[-1]
 end
 
 if __FILE__ == $PROGRAM_NAME
